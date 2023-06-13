@@ -8,9 +8,9 @@ module.exports = {
         roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        "base-800": "#c17627",
-        "base-400": "#f19431",
-        "base-100": "#f5d662",
+        "base-800": "#207194",
+        "base-400": "#36BCF7",
+        "base-100": "#72d0f9",
       },
     },
     plugins: [],
