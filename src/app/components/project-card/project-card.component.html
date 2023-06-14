@@ -1,0 +1,58 @@
+<div
+  *ngFor="let project of projects"
+  class="relative project-card p-2 w-72 bg-violet-100 rounded-lg drop-shadow-xl dark:bg-gray-800"
+>
+  <!-- Image Section -->
+  <div class="aspect-video rounded-sm overflow-hidden">
+    <img
+      class="project-image transition-all duration-[4s] ease-in-out"
+      src="{{ project.image }}"
+      alt=""
+    />
+    :
+    <img class="" src="" alt="" />
+  </div>
+    <!-- Project Body -->
+  <div class="p-2">
+    <h5
+      class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+    >
+      {{ project.title }}
+    </h5>
+    <p class="mb-1 text-sm font-normal text-gray-700 dark:text-gray-400">
+      {{ project.description }}
+    </p>
+    <div class="pt-2">
+      <h6 class="text-gray-900 dark:text-white font-bold">
+        Technologies
+      </h6>
+      <div
+        class="flex gap-2 pt-1 flex-wrap">
+         <div *ngFor="let tech of project.technologies" >
+          <img class="w-6 h-6" src="{{tech}}" alt=""> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Buttons Section -->
+  <div
+    class="project-btns absolute flex flex-col gap-1 bottom-2 -right-6 lg:opacity-0 transition-all duration-200 ease-in-out"
+  >
+    <a href="{{ project.url }}" target="_blank" rel="noreferrer">
+      <div
+        class="w-10 h-10 bg-violet-100 dark:bg-gray-800 dark:border-gray-700 rounded-br-lg rounded-tr-lg flex items-center justify-center text-gray-900 dark:text-white hover:text-my-purple-400 transition-colors duration-200 ease-in-out"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="white" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+      </svg>
+      </div>
+    </a>
+    <a href="{{ project.repository }}" target="_blank" rel="noreferrer">
+      <div
+        class="w-10 h-10 bg-violet-100 dark:bg-gray-800 dark:border-gray-700 rounded-br-lg rounded-tr-lg flex items-center justify-center text-gray-900 dark:text-white hover:text-my-purple-400 transition-colors duration-200 ease-in-out"
+      >
+      <svg class="w-6 h-6" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-rule="evenodd" d="M8 1C4.133 1 1 4.13 1 7.993c0 3.09 2.006 5.71 4.787 6.635.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.937-2.357-.937-.319-.808-.778-1.023-.778-1.023-.635-.434.048-.425.048-.425.703.05 1.073.72 1.073.72.624 1.07 1.638.76 2.037.582.063-.452.244-.76.444-.935-1.554-.176-3.188-.776-3.188-3.456 0-.763.273-1.388.72-1.876-.072-.177-.312-.888.07-1.85 0 0 .586-.189 1.924.716A6.711 6.711 0 018 4.381c.595.003 1.194.08 1.753.236 1.336-.905 1.923-.717 1.923-.717.382.963.142 1.674.07 1.85.448.49.72 1.114.72 1.877 0 2.686-1.638 3.278-3.197 3.45.251.216.475.643.475 1.296 0 .934-.009 1.688-.009 1.918 0 .187.127.404.482.336A6.996 6.996 0 0015 7.993 6.997 6.997 0 008 1z" clip-rule="evenodd"/></svg>
+      </div>
+    </a>
+  </div>
+</div>
