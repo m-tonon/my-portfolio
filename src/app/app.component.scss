@@ -9,6 +9,7 @@ a#scroll-btn {
   bottom: 1rem;
   border-radius: 3em;
 }
+
 a#scroll-btn:before {
   position: absolute;
   content: "";
@@ -22,6 +23,7 @@ a#scroll-btn:before {
   border-radius: 50%;
   animation: move-down 2s infinite;
 }
+
 @keyframes move-down {
   80% {
     opacity: 0.5;
@@ -31,6 +33,7 @@ a#scroll-btn:before {
     opacity: 0;
   }
 }
+
 a#scroll-btn:after {
   position: absolute;
   content: "SCROLL DOWN";
