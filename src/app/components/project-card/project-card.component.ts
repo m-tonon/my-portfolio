@@ -27,7 +27,7 @@ export class ProjectCardComponent implements OnInit {
     },
     {
       title: 'Business Dashboard',
-      description: 'A business dashboard built with Angular and Firebase',
+      description: 'A business dashboard built with Angular and ASP.Net Core',
       image: '../../assets/img/dashboard.png',
       repository: 'https://github.com/m-tonon/angular-net-dashboard',
       url: 'https://angular-dotnet-dashboard.vercel.app/',
