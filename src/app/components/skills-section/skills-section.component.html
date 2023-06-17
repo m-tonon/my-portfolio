@@ -3,42 +3,42 @@
     class="text-3xl md:text-5xl font-bold text-base-400 text-center mb-3 lg:mb-8"
   >
     &lt;
-    <span class="text-gray-900 dark:text-white">TechnicalSkills</span>
+    <span class="text-white">TechnicalSkills</span>
     &#47;&gt;
   </h2>
   <div class="flex gap-7 flex-wrap justify-center py-6 ">
     <!-- Language Section -->
     <div class="flex flex-col items-center ">
-      <h5 class="dark:text-white text-2xl translate-y-3 bg-violet-200 dark:bg-gray-900 px-3 rounded-lg py-1">
+      <h5 class="text-white text-2xl translate-y-3 bg-gray-900 px-3 rounded-lg py-1">
         Languages
       </h5>
-      <div class="ring-2 dark:ring-gray-800 ring-violet-400 rounded-xl grid grid-cols-2 md:grid-cols-3 gap-4 p-5 lg:pt-10 dark:bg-gray-900">
+      <div class="ring-2 ring-gray-800 rounded-xl grid grid-cols-2 md:grid-cols-3 gap-4 p-5 lg:pt-10 bg-gray-900">
         <div 
         *ngFor="let icon of langIcons"
-        class=" bg-white drop-shadow-xl dark:bg-gray-800 bg-opacity-60 px-7 py-7 rounded-lg dark:hover:bg-gray-950 transition-colors duration-200 ease-in-out flex flex-col justify-center items-center gap-2 ">
+        class=" drop-shadow-xl bg-gray-800 bg-opacity-60 px-7 py-7 rounded-lg hover:bg-gray-950 transition-colors duration-200 ease-in-out flex flex-col justify-center items-center gap-2 ">
           <img 
             class="w-10 h-10" 
             src="{{ icon.path }}" alt="">
           <p 
-            class="dark:text-white bottom-2 transition-colors duration-100 ease-in-out"
+            class="text-white bottom-2 transition-colors duration-100 ease-in-out"
             >{{ icon.name }}</p>
         </div>
       </div>
     </div>
     <!-- Tools Section -->
     <div class="flex flex-col items-center">
-      <h5 class="dark:text-white text-2xl translate-y-3 bg-violet-200 dark:bg-gray-900 px-3 rounded-lg py-1">
+      <h5 class="text-white text-2xl translate-y-3 bg-gray-900 px-3 rounded-lg py-1">
         Tools
       </h5>
-      <div class="ring-2 dark:ring-gray-800 ring-violet-400 dark:bg-gray-900 rounded-xl grid grid-cols-2 md:grid-cols-3 gap-4 p-5 lg:pt-10">
+      <div class="ring-2 ring-gray-800 bg-gray-900 rounded-xl grid grid-cols-2 md:grid-cols-3 gap-4 p-5 lg:pt-10">
         <div 
         *ngFor="let icon of toolIcons"
-        class="text-sm bg-white drop-shadow-xl dark:bg-gray-800 bg-opacity-60 px-2 py-7 rounded-lg  dark:hover:bg-gray-950 transition-colors duration-200 ease-in-out flex flex-col justify-center items-center gap-2">
+        class="text-sm drop-shadow-xl bg-gray-800 bg-opacity-60 px-2 py-7 rounded-lg hover:bg-gray-950 transition-colors duration-200 ease-in-out flex flex-col justify-center items-center gap-2">
           <img 
             class="w-10 h-10" 
             src="{{ icon.path }}" alt="">
           <p 
-            class="dark:text-white bottom-2 transition-colors duration-100 ease-in-out"
+            class="text-white bottom-2 transition-colors duration-100 ease-in-out"
             >{{ icon.name }}</p>
         </div>
       </div>
