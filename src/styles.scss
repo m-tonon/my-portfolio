@@ -41,25 +41,39 @@
 }
 
 .slide-effect {
-  animation-name: slideRight;
-  animation-duration: 1000ms;
+  animation-duration: 1600ms;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 
-  @keyframes slideRight {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
+  &.slide-right {
+    animation-name: slideRight;
+
+    @keyframes slideRight {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   }
-}
 
-.initial-state {
-  opacity: 0;
+  &.slide-left {
+    animation-name: slideLeft;
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .zoom-effect {

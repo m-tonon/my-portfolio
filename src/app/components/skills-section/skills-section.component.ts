@@ -25,6 +25,9 @@ export class SkillsSectionComponent implements OnInit {
 
   @HostListener('window:scroll')
   handleScroll() {
+    // const scrollPosition = window.scrollY;
+    // console.log(scrollPosition);
+    console.log(this.scrolling);
     this.scrolling = true;
   }
 }

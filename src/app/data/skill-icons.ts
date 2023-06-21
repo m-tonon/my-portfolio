@@ -18,6 +18,7 @@ const toolIcons = [
   {name:'Cypress.io', path: '../assets/svg/cypress.svg' },
   {name:'Postman', path: '../assets/svg/postman.svg' },
   {name: 'Tailwind CSS', path: '../assets/svg/tailwind.svg' },
+  {name:'Bootstrap', path: '../assets/svg/bootstrap.svg' },
   {name:'Jira', path: '../assets/svg/jira.svg' },
   {name:'Visual Studio Code', path: '../assets/svg/vscode.svg'}
 ];
