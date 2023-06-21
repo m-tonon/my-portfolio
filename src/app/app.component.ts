@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
@@ -13,11 +13,15 @@ import { ProjectSectionComponent } from './components/project-section/project-se
     RouterOutlet,
     HeroSectionComponent,
     SkillsSectionComponent,
-    ProjectSectionComponent
+    ProjectSectionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'my-portfolio';
+
+  constructor() {}
+
+  ngOnInit(): void {}
 }
