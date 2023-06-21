@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { langIcons, toolIcons } from '../../data/skill-icons';
 
@@ -12,9 +12,22 @@ import { langIcons, toolIcons } from '../../data/skill-icons';
 export class SkillsSectionComponent implements OnInit {
   @Input() langIcons: any;
   @Input() toolIcons: any;
+  scrolling: boolean;
 
   ngOnInit() {
     this.langIcons = langIcons;
     this.toolIcons = toolIcons;
+  }
+
+  constructor() {
+    this.scrolling = false;
+  }
+
+  @HostListener('window:scroll')
+  handleScroll() {
+    // const scrollPosition = window.scrollY;
+    // console.log(scrollPosition);
+    console.log(this.scrolling);
+    this.scrolling = true;
   }
 }
